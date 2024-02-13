@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/tab-logo.png" type="image/x-icon">
+    <title>MRIS | Year</title>
+</head>
+<body onload="getMovies()">
+
+    <div class="wrapper container-fluid p-0">
+        
+    <!-- NAVIGATION BAR -->
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./intro.html"><img src="./images/logo.png" alt="" id="navbar-logo"></a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=" navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-3 ">
+                            <a class="nav-link text-light active" href="./year.html">Year</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light" href="./cast.html">Cast</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light" href="./sales.html">Sales</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light" href="./prediction.html">Prediction</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    
+
+    <!-- TITLE -->
+        <div class="container-fluid mt-3 py-2 chart-title">
+            <div class="text-white text-center">
+                <h1>Movie Rating per Year</h1>
+            </div>
+        </div>
+
+    <!-- CANVAS FOR CHART -->
+        
+        <div class="container-fluid mt-3 p-md-5">
+            <div class="row">
+                <div class="col-md-7">
+                    <canvas id="yearChart"></canvas>
+                </div>
+                <div class="col-md-5 pl-5">
+                    <h3 class="text-light">Descriptive Analysis</h3>
+                    <hr>
+                    <p>The line graph shows the annual reviews that the MCU movies garnered throughout the years. A line graph was used to easily represent and visualize the progress of the reviews of MCU movies. As we can see in the graph the movies created by MCU receives a consistently high ratings especially in the recent years from 2016 up to 2019, the ratings mostly remained at 90. It can also be seen that there was a rollercoaster of ratings in the years 2012- 2014, where it was at 91 in 2012 for the film The Avengers then went down to 66 in 2013 for the movie Thor: The Dark World, where it received the lowest of ratings, and in the following year it went back at an average of 91 in 2014 for both films of Captain America: The Winter Soldier and Guardians of the Galaxy.  The graph also shows that the ratings peaked at 96 in the year 2018 for the film Black Panther, where it received the highest ratings for the MCU films.</p>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- MOVIE SLIDER -->
+
+        <div class="container-fluid">
+            <div class="row text-light py-5">
+                <div class="scrollable d-flex mx-5">
+                    <div id="myDiv"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="year-dv.js"></script>
+</body>
+</html>

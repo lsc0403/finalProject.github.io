@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/tab-logo.png" type="image/x-icon">
+    <title>MRIS | Sales</title>
+</head>
+<body onload = "getSales()">
+
+    <div class="wrapper container-fluid p-0">
+        
+    <!-- NAVIGATION BAR -->
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./intro.html"><img src="./images/logo.png" alt="" id="navbar-logo"></a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=" navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-3 ">
+                            <a class="nav-link text-light" href="./year.html">Year</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light" href="./cast.html">Cast</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light active" href="./sales.html">Sales</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light" href="./prediction.html">Prediction</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    
+
+    <!-- TITLE -->
+        <div class="container-fluid mt-3 py-2 chart-title">
+            <div class="text-white text-center">
+                <h1>MCU Sales per Annum</h1>
+            </div>
+        </div>
+    
+    <!-- CONTENT -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MOVIE SLIDER -->
+                <div class="col-sm-4 text-light mt-5">
+                    <div class="container-fluid">
+                        <table class="table text-light text-center">
+                          <thead>
+                            <tr>
+                              <th>YEAR</th>
+                              <th>SALES</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="myDiv"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+    <!-- LINE GRAPH -->
+            <div class="col-sm-8">
+                <div class="pt-2">
+                    <h2 class="text-center text-light mt-3 mb-3"> SALES </h2>
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container py-5">
+            <h3 class="text-light">Descriptive Analysis</h3>
+            <hr>
+            <p>Marvel is already a prominent figure in the industry. From their titular comic books, their numerous cartoon series, and even a few animated films they developed, they have cemented themselves as a company capable of delivering quality entertainment to their fans. In this past decade, Marvel has decided to expand their live-action film selection using characters from their well-known comic books. These movies would be collectively known as the “Marvel Cinematic Universe”. This cinematic universe would be divided into three parts: phase 1, phase 2, and phase 3.
+                The first film of Phase 1, and the first film of the entire series, is the movie “Iron Man”. As the product of a well-known company, Iron Man went on to become a hit among the populace, grossing over 580 million dollars in both domestic and global box office revenue. The next few movies did not earn as much as the first one. Captain America: The First Avenger only earned 370 million dollars. The release of Iron Man 2 would make another record for Phase 1 as it overtakes the earnings of its predecessor, grossing over 620 million dollars in revenue. The next film, Thor, did not earn as much as the movie before it but still earned an impressive 450 million for a first film.  However, all of these earlier films are dwarfed by The Avengers. As the first crossover of the cinematic universe, the film featured the different protagonists from the previous movies while also adding new characters to the story. In the end, it earned more than 1.5 billion on box office revenue. It is almost three times the revenue of the first Iron Man movie and is a proper end to the first phase of the Marvel Cinematic Universe.
+                The success of The Avengers helped the series reach public consciousness and its results show. Iron Man 3 was the first to experience this as shown when it earned 1.2 billion dollars. Just 300 million dollars shy of the record made by The Avengers. Iron Man 3 is not the only one to benefit from it as other movies would reap its blessings too. The movies Thor: Dark World, Captain America: Winter Soldier, and the first Guardian of the Galaxy would all earn more than 600 million dollars. A far cry from the sales of the movies in the first phase of the cinematic universe. The main film in phase 2 is Avengers: Age of Ultron. As the crossover film in the series, it would be a box office hit. However, it did not earn as much as the first Avenger movie as the sequel grossed only 1.4 billion compared to the 1.5 billion of the first movie. 
+                The third phase of the Marvel Cinematic Universe is perhaps the most profitable of the three chapters so far. It started off with Captain America: Civil War, another crossover featuring the various superheroes in the series. The prospect of a crossover movie that is not that of the Avengers interested many people which led to its revenue of 1.1 billion dollars. Doctor Strange would follow and gross over 650 million dollars while those of Guardians of the Galaxy 2, Spiderman: Homecoming, and Thor: Ragnarok would all earn more than 800 million. One prominent movie in phase 3 is Black Panther as it is the first movie to feature a black person as its titular character. This movie was supported by the African-American community and is one of the reasons why it earned 1.3 billion in its box office. The next movie would be one that dwarves all of the previous movies from the franchise. Avengers: Infinity War would be the be the biggest crossover of Phase 3. The movie grossed more than 2 billion dollars. Three times more than the earnings of the first MCU movie. However, this record would be broken by its next installment: Avengers: Endgame. The” biggest crossover in history” was a massive financial success and has 2.8 billion in revenue. Breaking the record made by the movie will be a hard achievement to accomplish and will be a challenge to the directors of the Marvel movies in the future.
+                </p>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="sales-dv.js"></script>
+</body>
+</html>

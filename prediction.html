@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/tab-logo.png" type="image/x-icon">
+    <title>MRIS | Prediction</title>
+</head>
+<body onload="getFutureMovies()">
+
+    <div class="wrapper container-fluid p-0">
+        
+    <!-- NAVIGATION BAR -->
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./intro.html"><img src="./images/logo.png" alt="" id="navbar-logo"></a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=" navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-3 ">
+                            <a class="nav-link text-light" href="./year.html">Year</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light" href="./cast.html">Cast</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light" href="./sales.html">Sales</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link text-light active" href="./prediction.html">Prediction</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    
+
+    <!-- TITLE -->
+        <div class="container-fluid mt-3 py-2 chart-title">
+            <div class="text-white text-center">
+                <h1>Prediction</h1>
+            </div>
+        </div>
+    
+    <!-- CONTENT -->
+    <div class="container">
+        <div class="row text-light py-5">
+            <div class="scrollable d-flex mx-5">
+                <div id="myDiv"></div>
+            </div>
+            <div class="container text-center pt-2">
+                <h5>Future MCU Movies</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+    <!-- TEXT -->
+            <p class="text center text-light mt-5 mr-5 ml-5">
+                <h3 class="text-light">Rating</h3>
+                <hr class="prediction-hr">
+                <p>Due to the consistent high ratings that the MCU films received, especially in the recent years it is predicted that the future MCU film for the years 2021 to 2023 or its phase 4 of films would also obtain an annual rating that is ranging from 86 up to 90. Specifically, those that follows a sequel of a previous MCU film or those that have common MCU heroes such as the Black Widow Movie or the Doctor Strange in the Multiverse of Madness. And for the sequel of the Black Panther movie which gained the highest rating in the MCU films, Black Panther: Wakanda Forever is expected to also gain a similar rating as high as 96.</p>
+                <br>
+                <h3 class="text-light">Cast</h3>
+                <hr class="prediction-hr">
+                <p>Since the end of the Avenger film franchise, some cast or superhero has not renewed for another film, that is why the phase 4 of MCU films welcomes a new set of casts and a new set of Superhero Story that we are to discover, such as the Eternals and Shang-Chi and the Legend of the Ten Rings. While for the Films similar to the audience like the Black Widow, Scarlett Johansson having an average rating of 85 per movie it is predicted that its solo movie will also acquire a similar rating to this based on the cast rating, while for the Spider-Man: No Way Home since it casted Tom Holland and Benedict Cumberbatch the rating is expected to be at 92 and similar with those familiar casts like the Guardians of the Guardians of the Galaxy Vol. 3 since it will also contain the gang of similar casts its rating should also be around the 89 mark.</p>
+                <br>
+                <h3 class="text-light">Sales</h3>
+                <hr class="prediction-hr">
+                <p>The Marvel Cinematic Universe is still a behemoth in the entertainment industry despite ending their first line up of movies that they called the “Infinity Saga”. Since its first movie, more and more people have started to watch them despite not having read the comics before. Its popularity grew not only because of advertisements and paid promotions but also of positive word-of-mouth from fans. It has cemented itself as a giant in the cinemas.
+                    As time goes on, they will release new movies every year and most of them will be guaranteed to be a financial success for various reasons. Take the upcoming “Spider-Man: No Way Home” for example. Its prequels have already enjoyed success with the first movie earning 800 million dollars and the second earning more than 1 billion dollars. It would not be wrong to assume that it will earn as much if not more than its predecessors. Other examples of movies that has a high chance of success are Black Panther: Wakanda Forever and Guardians of the Galaxy Vol. 3. Both were sequels of their own series which were successful. Black Widow is an upcoming stand-alone movie but the titular character’s connection to the Avengers series will make fans of Marvel see it.
+                    A giant like Marvel will be hard to rival, or even topple, in sales or popularity. They have entrenched themselves in pop culture and their fame will not dwindle in the foreseeable future. The only way for its popularity to diminish is for another strong competitor to appear and rival their movies or for a great controversy or scandal to turn would be viewers away from watching the new films.
+                    </p>
+            </p>
+            
+
+    </div>
+    
+
+    <!-- SCRIPTS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="prediction-dv.js"></script>
+</body>
+</html>
